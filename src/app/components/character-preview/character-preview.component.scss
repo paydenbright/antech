@@ -1,0 +1,31 @@
+@import "./../../shared-styles/buttons.scss";
+
+.details-container {
+    padding: 20px;
+    display: flex;
+}
+
+td {
+    min-width: 120px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+td:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.film-row {
+    vertical-align: top;
+}
+
+ul {
+    margin: 0;
+    list-style: inherit;
+}
+
+li {
+    list-style-position: inside;
+    width: 100%;
+}

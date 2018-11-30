@@ -1,0 +1,47 @@
+@import "./colors.scss";
+
+// PRIMARY BUTTON STYLES
+.primary-btn {
+    background-color: $black;
+    color: $yellow;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 15px;
+    border: none;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    border: 2px solid $white;
+    text-align: center;
+}
+
+.primary-btn:hover {
+    background-color: $dark-gray;
+    border: 2px solid $white;
+    cursor: pointer;
+    color: $white;
+}
+
+.primary-btn:active {
+    box-shadow: none;
+    border: 2px solid $white;
+}
+
+.primary-btn:focus {
+    outline: none;
+    border: 2px solid $focus-blue;
+}
+
+// CLOSE BUTTON STYLES
+.close-btn {
+    position: absolute;
+    color: $white;;
+    right: 0px;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: $white;
+    color: $black;
+}

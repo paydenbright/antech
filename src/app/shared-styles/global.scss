@@ -1,0 +1,85 @@
+@import "./colors.scss";
+
+body {
+    margin: 0;
+    user-select: none;
+    background-color: $light-gray;
+    font-size: 14px;
+}
+
+// MAIN CONTAINER FOR APP
+#app-container {
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+    background-color: $white;
+}
+
+h1 {
+    color: $black;
+    text-shadow: -1px 0 $yellow, 0 1px $yellow, 1px 0 $yellow, 0 -1px $yellow;
+    background-color: $black;
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+p {
+    margin: 0 0 10px;
+}
+
+// TRANSPARENT SCREEN - USED WITH MODALS
+.screen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background-color: $screen;
+    cursor: pointer;
+}
+
+//  POP UP
+.modal {
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    right: 20px;
+    left: 20px;
+    background: white;
+    height: calc(100% - 150px);
+    transform: translateY(-50%);
+    border-radius: 5px;
+    max-height: 550px;
+    max-width: 800px;
+    min-width: 280px;
+    margin: auto;
+    background-image: linear-gradient($light-gray, $white-smoke);
+}
+
+// DISABLES SCROLLING IN THE BACKGROUND WHILE MODAL IS ACTIVE
+body.modal-active {
+    overflow: hidden;
+}
+
+// USEFUL CLASSES FOR DYNAMIC USE
+.display-none { display: none; }
+.flex { display: flex; }
+.transparent { opacity: 0; }
+.full-height { height: 100%; }
+.full-width { width: 100%; }
+
+.position-fixed { position: fixed; }
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.position-inherit { position: inherit; }

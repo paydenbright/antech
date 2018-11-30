@@ -1,0 +1,48 @@
+<!-- TRANSPARENT SCREEN -->
+<div class="screen" (click)="closeDetails()" title="Click to close"></div>
+
+<!-- MODAL STARTS HERE -->
+<div class="modal"> 
+    <!-- CLOSE BTN -->
+    <div class="close-btn" (click)="closeDetails()" title="Click to close">X</div> 
+      <!-- MODAL :: TITLE  -->
+    <h1>DETAILS</h1>
+
+    <!-- CHARACTER DETAILS -->
+    <div class="details-container">
+        <table>
+            <tr>
+                <td>Person:</td>
+                <td>{{character.name}}</td>
+            </tr>
+            <tr>
+                <td>Eye Color:</td>
+                <td>{{character.eye_color}}</td>
+            </tr>
+            <tr>
+                <td>Hair Color:</td>
+                <td>{{character.hair_color}}</td>
+            </tr>
+            <tr>
+                <td>Height:</td>
+                <td>{{character.height}}</td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>{{character.gender}}</td>
+            </tr>
+            
+            <!-- LAST ROWS ARE AN ARRAY -->
+            <tr>
+                <td class="film-row">Films:</td>
+                <td>    
+                    <ul>
+                        <li *ngFor="let film of character.films;"> <a [href]="film" target="_blank" title="{{'Navigate to ' +film}}">{{film}}</a></li> 
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</div>
